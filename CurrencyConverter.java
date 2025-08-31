@@ -4,9 +4,9 @@ public class CurrencyConverter {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the amount: ");
         double amount = sc.nextDouble();
-        System.out.print("Enter the currency to convert from (USD, EUR, INR,JPY,CAD,CNY,NZD): ");
+        System.out.print("Enter the currency to convert from (USD): ");
         String fromCurrency = sc.next().toUpperCase();
-        System.out.print("Enter the currency to convert to (USD, EUR, INR,JYP,CAD,CNY,NZD): ");
+        System.out.print("Enter the currency to convert to (EUR, INR,JYP,CAD,CNY,NZD): ");
         String toCurrency = sc.next().toUpperCase();
         double conversionRate;
         switch(fromCurrency){
@@ -44,3 +44,4 @@ public class CurrencyConverter {
         sc.close();
     }
 }
+
